@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block head %}
+<style>
+  .hero {
+    background: linear-gradient(to right, #FFD700, #1A1D23);
+    color: #1A1D23;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  .service-icon {
+    font-size: 2rem;
+    color: #FFD700;
+  }
+  .p-3.border.rounded.shadow-sm {
+    background: #23262e;
+    color: #FFD700;
+  }
+</style>
+{% endblock %}
+{% block content %}
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Secure Your Future with i.coin Insurance</h1>
+      <p class="lead">Affordable, reliable cover for you, your family, and your business.</p>
+      <a href="#" class="btn btn-light btn-lg mt-3">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Our Services</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <a href="{{ url_for('accesswealth') }}" class="text-decoration-none">
+            <div class="p-3 border rounded shadow-sm h-100">
+              <div class="service-icon mb-2">💰</div>
+              <h5>AccessWealth</h5>
+              <p>R100 invested + R125,000 cover<br><strong>R359/month</strong></p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#autoguru" class="text-decoration-none">
+            <div class="p-3 border rounded shadow-sm h-100">
+              <div class="service-icon mb-2">🚗</div>
+              <h5>AutoGuru</h5>
+              <p>The perfect partner for vehicle owners<br><strong>R279/month</strong></p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#familywealth" class="text-decoration-none">
+            <div class="p-3 border rounded shadow-sm h-100">
+              <div class="service-icon mb-2">👨‍👩‍👧‍👦</div>
+              <h5>FamilyWealth</h5>
+              <p>R20,000 funeral cover for families<br><strong>R279/month</strong></p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#legalguard" class="text-decoration-none">
+            <div class="p-3 border rounded shadow-sm h-100">
+              <div class="service-icon mb-2">⚖️</div>
+              <h5>LegalGuard</h5>
+              <p>R250,000 legal indemnity<br><strong>R279/month</strong></p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#mediguard" class="text-decoration-none">
+            <div class="p-3 border rounded shadow-sm h-100">
+              <div class="service-icon mb-2">🏥</div>
+              <h5>MediGuard</h5>
+              <p>Primary healthcare + hospital cover<br><strong>R701/month</strong></p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#motomedic" class="text-decoration-none">
+            <div class="p-3 border rounded shadow-sm h-100">
+              <div class="service-icon mb-2">🛠️</div>
+              <h5>MotoMedic</h5>
+              <p>Vehicle mechanical warranty<br><strong>R279/month</strong></p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="#wealthguard" class="text-decoration-none">
+            <div class="p-3 border rounded shadow-sm h-100">
+              <div class="service-icon mb-2">🛡️</div>
+              <h5>WealthGuard</h5>
+              <p>R1,000,000 accidental death cover<br><strong>R289/month</strong></p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">What Our Clients Say</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <blockquote class="blockquote text-center">
+            <p>"i.coin helped me replace my car within a week!"</p>
+            <footer class="blockquote-footer">Thabo M.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
+

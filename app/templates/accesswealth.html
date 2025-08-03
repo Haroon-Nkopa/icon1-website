@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+  <div class="text-center mb-4">
+    <h1 class="display-4">AccessWealth</h1>
+    <p class="lead">R100 invested + R125,000 cover</p>
+    <p class="text-muted">Only R359 per month</p>
+    <a href="{{ url_for('signup') }}" class="btn btn-primary btn-lg">Get Started</a>
+  </div>
+
+  <section class="mb-5">
+    <h3>What is AccessWealth?</h3>
+    <p>
+      AccessWealth is a powerful financial product that combines investment and protection. For only R359 per month, you get R100 invested monthly and R125,000 life cover. It’s designed for those who want to grow their savings while ensuring their loved ones are protected.
+    </p>
+  </section>
+
+  <section class="mb-5">
+    <h3>How It Works</h3>
+    <ol>
+      <li>Sign up online or through an agent.</li>
+      <li>Pay R359 every month.</li>
+      <li>We invest R100 each month into your savings fund.</li>
+      <li>You receive R125,000 life cover from day one.</li>
+    </ol>
+  </section>
+
+  <section class="mb-5">
+    <h3>Benefits & Features</h3>
+    <ul>
+      <li>Monthly investment grows over time.</li>
+      <li>Immediate life cover of R125,000.</li>
+      <li>Affordable and simple to understand.</li>
+      <li>Can be managed online or via mobile support.</li>
+    </ul>
+  </section>
+
+  <section class="mb-5">
+    <h3>Testimonials</h3>
+    <blockquote class="blockquote">
+      “AccessWealth gave me peace of mind knowing my family is protected, and my savings are growing.” <br> — <footer class="blockquote-footer"> <br> Thabo M.</footer>
+    </blockquote>
+    <blockquote class="blockquote">
+      “It’s the perfect combo of saving and security. I love how transparent it is.” <br> — <footer class="blockquote-footer"> Lindiwe N.</footer>
+    </blockquote>
+  </section>
+
+  <section class="text-center mt-5">
+    <a href="{{ url_for('signup') }}" class="btn btn-success btn-lg">Sign Up Now</a>
+  </section>
+</div>
+{% endblock %}
